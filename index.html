@@ -7,16 +7,27 @@
     <!-- CSS kodlarını buraya, head kısmına yazıyoruz -->
     <style>
         body {
-            background-color: #9a5a38;
-            font-family: 'Times New Roman', serif;
-            text-align: center;
-            padding: 50px;
-            color:#2b1813;
-            background-image: url('https://hece.us/images/2022/08/13/karakoc-288-018.jpg');
-            backkground-repeat: no-repeat;
-            background-position: right bottom;
-            background-attachment: fixed;
-            background-size:150px 150px;
+            /* Yazı Tipi ve Renk Ayarları */
+    font-family: 'Times New Roman', serif;
+    text-align: center;
+    color: #2b1813;
+    
+    /* Arka Plan Ayarları (Orduyu durduran kısım) */
+    background-color: #9a5a38;
+    background-image: url('https://hece.us/assets/img/sairler/karakoc.jpg');
+    background-repeat: no-repeat; /* Resmin tekrar etmesini engeller */
+    background-position: right bottom; /* Resmi sağ alta sabitler */
+    background-attachment: fixed; /* Sayfa kaysa da resim orada kalır */
+    background-size: 200px auto; /* Resmin boyutunu buradan küçültebilirsin */
+
+    /* Sayfayı Ortalama Ayarları */
+    margin: 0;
+    padding: 50px 20px; /* Üstten 50px boşluk bırakır */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
             
         }
         .siir-kart {
