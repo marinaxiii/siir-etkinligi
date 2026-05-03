@@ -31,11 +31,14 @@
             
         }
         .siir-kart {
-            background: rgba(255, 255, 255, 0.9); /* Saf beyaz yerine %90 şeffaf beyaz */
-    border: none;
+          background: white; /* Arka planı düz beyaz yap ki arkası görünmesin */
     padding: 40px;
-    border-radius: 10px; /* Köşeleri biraz yuvarlattık */
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    max-width: 450px; /* Kutunun genişliğini sınırla */
+    width: 90%; /* Mobilde düzgün durması için */
+    text-align: center;
+    z-index: 1; /* Kutuyu en öne çıkarır */
         }
         h1 { color: #2b1813; }
     </style>
