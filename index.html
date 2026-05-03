@@ -7,39 +7,44 @@
     <!-- CSS kodlarını buraya, head kısmına yazıyoruz -->
     <style>
         body {
-            /* Yazı Tipi ve Renk Ayarları */
     font-family: 'Times New Roman', serif;
     text-align: center;
     color: #2b1813;
-    
-    /* Arka Plan Ayarları (Orduyu durduran kısım) */
     background-color: #9a5a38;
+    /* Arka plan ayarları */
     background-image: url('https://hece.us/assets/img/sairler/karakoc.jpg');
-    background-repeat: no-repeat; /* Resmin tekrar etmesini engeller */
-    background-position: right bottom; /* Resmi sağ alta sabitler */
-    background-attachment: fixed; /* Sayfa kaysa da resim orada kalır */
-    background-size: 200px auto; /* Resmin boyutunu buradan küçültebilirsin */
-
-    /* Sayfayı Ortalama Ayarları */
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-attachment: fixed;
+    background-size: 200px auto;
+    /* Hizalama */
     margin: 0;
-    padding: 50px 20px; /* Üstten 50px boşluk bırakır */
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
-            
-        }
-        .siir-kart {
-          background: white; /* Arka planı düz beyaz yap ki arkası görünmesin */
+
+.siir-kart {
+    background-color: white; /* Kutunun rengini belirler */
     padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    max-width: 450px; /* Kutunun genişliğini sınırla */
-    width: 90%; /* Mobilde düzgün durması için */
-    text-align: center;
-    z-index: 1; /* Kutuyu en öne çıkarır */
-        }
+    border-radius: 15px; /* Köşeleri yuvarlar */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3); /* Gölge verir */
+    max-width: 400px;
+    width: 80%;
+    z-index: 10;
+}
+
+h1 {
+    margin-top: 0;
+    color: #2b1813;
+}
+
+p {
+    line-height: 1.8;
+}
+
+        
         h1 { color: #2b1813; }
     </style>
 </head>
